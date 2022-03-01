@@ -17,7 +17,7 @@ Project Planning
 -----------------------------------------------------
 * Building a pesudo self-driving car
 * Steering angle of the car is contrelled with PID
-* Sensor: LIDAR
+* Sensor: LIDAR, Wheel Encoders
 * Accuator: RC Car Motor
 * Feedback: LIDAR sensor data (relative distance from obstacle
 * Hard-real time: Steering the RC car
