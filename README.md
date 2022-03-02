@@ -1,4 +1,4 @@
-# CSE-499 Independent Study: Embedded System Controls - Self Driving RC Car
+# CSE-499 Independent Study: Embedded System Controls - Autonomous RC Car
 
 -----------------------------------------------------
 About
@@ -15,7 +15,7 @@ Authors
 -----------------------------------------------------
 Project Planning
 -----------------------------------------------------
-* Building a pesudo self-driving car
+* Building a Autonomous RC Car
 * Steering angle of the car is controlled with PID Controller
 * Sensor: LIDAR, Ultrasonic
 * Accuator: Servos, RC Car Motor
