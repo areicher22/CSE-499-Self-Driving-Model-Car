@@ -15,7 +15,7 @@ Authors
 -----------------------------------------------------
 Project Planning
 -----------------------------------------------------
-* Building a Autonomous RC Car
+* Building an Autonomous RC Car
 * Steering angle of the car is controlled with PID Controller
 * Sensor: LIDAR, Ultrasonic
 * Accuator: Servos, RC Car Motor
