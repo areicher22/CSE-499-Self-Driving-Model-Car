@@ -28,6 +28,7 @@ Input
 -----------------------------------------------------
 * LIDAR Sensors
 * Ultrasonic Sensors
+* Wheel Encoders
 
 -----------------------------------------------------
 Output
@@ -46,6 +47,7 @@ Bill of Materials
 | 1        	| RC Car         	  |
 | 2        	| Servo Motor    	  |
 | 1        	| LCD            	  |
+| 4         | Wheel Encoder     |
 
 
 
