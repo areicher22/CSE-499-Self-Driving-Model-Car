@@ -1,6 +1,6 @@
 /* 
  * File Name: LiDAR.h
- * Developer: Mohammad Tamzeed Moazem
+ * Developer: Mohammad Tamzeed Moazem, Austin Reichert, Hasaan Saleh
  * Date:      26 April 2022
  * Described: Mbed Library for the Benewake TF-Luna Lidar sensor
  *            configured for the I2C interface
