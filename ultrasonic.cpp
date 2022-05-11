@@ -1,6 +1,6 @@
 /* 
  * File Name: LiDAR.h
- * Developer: Mohammad Tamzeed Moazem
+ * Developer: Mohammad Tamzeed Moazzem, Austin Reichert, Hasaan Saleh
  * Described: Mbed Library for HC-SR04 ultrasonic sensor
  * 
  * This is adopted from https://os.mbed.com/components/HC-SR04/
