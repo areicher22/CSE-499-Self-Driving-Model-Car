@@ -1,7 +1,7 @@
-/* 
+/*
  * File Name: main.cpp
  * Developer: Mohammad Tamzeed Moazzem, Austin Reichert, Hasaan Saleh
- * 
+ *
  */
 
 #include "LiDAR.h"
@@ -27,7 +27,7 @@ Ultrasonic left_sonar(PD_7, PD_6);
 Ultrasonic right_sonar(PD_5, PD_4);
 
 // DigitalIn object initialization
-DigitalIn check(PG_0);
+DigitalIn check(PA_3);
 
 // DigitalOut object initialization
 DigitalOut motor(PC_8);
@@ -52,33 +52,28 @@ int main() {
   while (true) {
     if (check == 1) {
       lider_dist = lidar.get_dist();
-      //printf("%f\n", lider_dist);
+      printf("%f\n", lider_dist);
 
       if (lider_dist < 20) {
         left_sonar_dist = left_sonar.getCurrentDistance();
-        printf("%f\n", left_sonar_dist);
         right_sonar_dist = right_sonar.getCurrentDistance();
-        printf("%f\n", right_sonar_dist);
-
         servo = 1;
 
+        if (right_sonar_dist >= left_sonar_dist) {
+
+          for (int i = MIN; i <= MAX; i += STEP) {
+            servo.pulsewidth_us(i);
+            wait_us(TIME * 200);
+          }
+        }
         if (left_sonar_dist > right_sonar_dist) {
-        //   servo.pulsewidth_us(MAX);
-        //   wait_us(TIME * 200);
           for (int i = MAX; i >= MIN; i -= STEP) {
             servo.pulsewidth_us(i);
             wait_us(TIME * 200);
           }
-        } 
-        // else if(left_sonar_dist < right_sonar_dist) {
-
-        //   for (int i = MIN; i <= MAX; i += STEP) {
-        //     servo.pulsewidth_us(i);
-        //     wait_us(TIME * 200);
-        //   }
-        // }
+        }
         servo = 0;
-      
+
       } else {
         motor = 1;
       }
